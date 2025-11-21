@@ -117,7 +117,7 @@ filter: drop-shadow(0 4px 6px rgba(0,0,0,0.18));}
     position: absolute;
     top: 50px;
     right: 0;
-    width: 260px;
+    width: 300px;
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 12px;
@@ -144,20 +144,17 @@ filter: drop-shadow(0 4px 6px rgba(0,0,0,0.18));}
     text-align: center;
     font-size: 12px;
     cursor: pointer;
+    padding: 8px;
   }
   .item img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 45px;
     margin-bottom: 5px;
   }
-
-
-/* sidebar */
-/* :root{
-  --sidebar-width: 270px;
-  --transition: 300ms ease;
-} */
-
+  .item:hover {
+    background-color: #f1f1f1;
+    border-radius: 10%;
+  }
 
 /* sidebar */
 .overlay {
@@ -353,7 +350,7 @@ justify-content: center;
     display: flex;
     border-radius: 0 50px 50px 0;
     flex-direction: row;
-    padding: 15px;
+    padding: 20px;
     gap: 12px;
 }
 .addbtn{
@@ -365,7 +362,14 @@ justify-content: center;
     border-radius: 50px 0 0 50px ;
     display: flex;
     flex-direction: row;
-    padding: 15px;
+    padding: 20px;
+}
+.addbtn:hover,
+.storage:hover,
+.signoutbtn:hover{
+    background-color: #d2d2d2;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 .cross{
     text-align: end;
@@ -381,7 +385,7 @@ justify-content: center;
     margin-top: 12px;
     background: white;
     max-width: 370px;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -561,7 +565,7 @@ justify-content: center;
 
 }
 .row:hover{
-    background-color:  rgb(213, 246, 213);
+    background-color:  rgb(230, 244, 234);
     cursor: pointer;
 }
 .plusicon{
